@@ -132,13 +132,9 @@ findCar = [];
 
 
 cars.forEach(function (car) {
-    if (car.includes("o") && car.includes("i")) {
+    if (car.includes("o") || car.includes("i")) {
         findCar.push(car)
-    } else {
-        findCar = "Öyle marka araba bulunamadı";
-        return;
-    }
-
+    } 
 });
 
-console.log("İsmi içinde o ve i geÇen arabaları bulunuz:" + findCar)
+console.log("İsmi içinde o veya i geçen arabaları bulunuz:" + findCar)
